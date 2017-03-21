@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+    <meta charset="utf-8">
+    <title>EvilLand</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+</body>
+	<script type="text/javascript" src="vendor/phaser.js"></script>
+    <script type="text/javascript" src="states/boot.js"></script>
+    <script type="text/javascript" src="states/preload.js"></script>
+    <script type="text/javascript" src="states/gametitle.js"></script>
+    <script type="text/javascript" src="states/main.js"></script>
+    <script type="text/javascript">
+        (function() {
+
+                //Create a new game that fills the screen
+                game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO);
+
+                //Add all states
+                game.state.add("Boot", Boot);
+                game.state.add("Preload", Preload);
+                game.state.add("GameTitle", GameTitle);
+                game.state.add("Main", Main);
+
+                //Start the first state
+                game.state.start("Boot");
+
+        })();
+    </script>
+</html>

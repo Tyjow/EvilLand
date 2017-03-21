@@ -1,0 +1,15 @@
+{
+  "name": "evilland",
+  "version": "1.0.0",
+  "description": "mmorpg evilland",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Tyjow",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
